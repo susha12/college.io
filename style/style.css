@@ -1056,6 +1056,19 @@ display: none;
     background: rgba(3, 178, 107, 1);
 
 }
+.box_two__twoo >button{
+    height: 25px;
+width: 110px;
+border-radius: 10px;
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: -0.08em;
+text-align: center;
+background: rgba(2, 86, 52, 1);
+color: white;
+border: none;
+}
 
 .new_box{
     top: -770px;
