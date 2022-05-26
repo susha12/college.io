@@ -711,8 +711,8 @@ background: rgba(225, 252, 222, 1);
 
 
 .box_content__section{
-    height: 450px;
-    width: 802px;
+    height: 445px;
+    width: 782px;
     display: flex;
     justify-content: start;
     align-items: flex-start;
@@ -723,6 +723,8 @@ background: rgba(225, 252, 222, 1);
 .section_img{
     height: 406px;
     width: 406px;
+    position: relative;
+
 }
 .section_img__original{
     width:406px;
@@ -733,6 +735,8 @@ background: rgba(225, 252, 222, 1);
 .section_box{
     height: 446px;
     width: 402px;
+    position: relative;
+    right: 10px;
 }
 .section_box_title{
     height: 60px;
