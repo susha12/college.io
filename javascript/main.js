@@ -16,8 +16,8 @@ function playMenu (){
     bodyAfter.style.overflow = "inherit";
     a--;
 }
-menu.onmouseover = ()=>{
-    // if( a == 0){
+menu.onclick = ()=>{
+    if( a == 0){
         menu.src = "images/header/close.png";
         menu.classList.add("active");
         navBar.style.display = "flex";
@@ -25,15 +25,15 @@ menu.onmouseover = ()=>{
         bodyAfter.style.zIndex = "1000";
         bodyAfter.style.overflow = "hidden";
         a++;
-    // }
-    // else if (a == 1){
-    //     playMenu ();
-    // }
+    }
+    else if (a == 1){
+        playMenu ();
+    }
 
 }
-menu.onclick = ()=>{
-    playMenu ();
-}
+// menu.onclick = ()=>{
+//     playMenu ();
+// }
 let listLiOne = document.querySelector(".list_li.one");
 let listLiTwo = document.querySelector(".list_li.two");
 let listLiFour = document.querySelector(".list_li.four");
