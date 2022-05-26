@@ -51,3 +51,19 @@ listLiFour.onclick = ()=>{
     navBarMeaningThree.style.display = "flex";
 }
 
+
+
+let newBox = document.querySelector(".new_box");
+let boxContentSectionDisable = document.querySelectorAll(".box_content__section.disable");
+
+let newBoxMore = document.querySelector(".new_box__more");
+
+newBoxMore.onclick = ()=>{
+    for(let i = 0; i < boxContentSectionDisable.length; i++){
+        boxContentSectionDisable[i].classList.toggle("active");
+    }
+    console.log(boxContentSectionDisable)
+    newBox.classList.toggle("active");
+
+
+}
