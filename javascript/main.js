@@ -6,7 +6,6 @@ let bodyAfter = document.querySelector("body");
 let a = 0;
 function playMenu (){
     menu.src = "images/header/menu.png";
-    console.log(a);
     menu.classList.remove("active");
     navBar.style.display = "none";
     navBarMeaningOne.style.display = "none";
@@ -20,7 +19,6 @@ function playMenu (){
 menu.onmouseover = ()=>{
     // if( a == 0){
         menu.src = "images/header/close.png";
-        console.log(a);
         menu.classList.add("active");
         navBar.style.display = "flex";
         bodyAfter.classList.add("active");
@@ -53,19 +51,19 @@ let navBarMeaningThree = document.querySelector(".nav_bar__meaning.three");
 //     playMenu ()
 // }
 
-listLiOne.onmouseover = ()=>{
+listLiOne.onclick = ()=>{
     navBarMeaningOne.style.display = "flex";
     navBarMeaningTwo.style.display = "none";
     navBarMeaningThree.style.display = "none";
 }
 
-listLiTwo.onmouseover = ()=>{
+listLiTwo.onclick = ()=>{
     navBarMeaningOne.style.display = "none";
     navBarMeaningTwo.style.display = "flex";
     navBarMeaningThree.style.display = "none";
 }
 
-listLiFour.onmouseover = ()=>{
+listLiFour.onclick = ()=>{
     navBarMeaningOne.style.display = "none";
     navBarMeaningTwo.style.display = "none";
     navBarMeaningThree.style.display = "flex";
@@ -82,8 +80,25 @@ newBoxMore.onclick = ()=>{
     for(let i = 0; i < boxContentSectionDisable.length; i++){
         boxContentSectionDisable[i].classList.toggle("active");
     }
-    console.log(boxContentSectionDisable)
     newBox.classList.toggle("active");
-
-
 }
+let headerTitle = document.querySelector(".header_title");
+let boxTitleSmall = document.querySelector(".box_title__small");
+
+// title header targget
+titleName ();
+window.onresize =()=>{
+   titleName ();
+} 
+function titleName (){
+    if (1398 < window.innerWidth){
+        headerTitle.innerHTML = "Роменський фаховий коледж КНЕУ";
+        boxTitleSmall.innerHTML = "РФК";
+    }
+    else if(1398 >= window.innerWidth){
+        headerTitle.innerHTML = "РФК КНЕУ";
+        boxTitleSmall.innerHTML = "РФК КНЕУ";
+    }
+}
+
+
