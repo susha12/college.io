@@ -1068,6 +1068,7 @@ text-align: center;
 background: rgba(2, 86, 52, 1);
 color: white;
 border: none;
+    cursor: pointer;
 }
 
 .new_box{
