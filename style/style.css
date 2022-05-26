@@ -544,25 +544,6 @@ background: rgba(225, 252, 222, 1);
     height: 53px;
     width: 52.54px;
 }
-/* .top_right_mesage{
-    height: 52px;
-    width: 52px;
-} */
-/* 
-
-                <a href="tel:+3800544872033"  target="_blank" class="top_right_phone">
-                    <img src="images/address/phone.png" alt="phone.png" class="img_phone">
-                    <p class="top_right__textPhone">тел.: (05448) 7-20-33</p>
-                </a>
-                <a href="mailto:info@rckneu.com.ua"  target="_blank" class="top_right_mesage">
-                    <img src="images/address/message.png" alt="message.png" class="img_message">
-                    <p class="top_right__textMessage">info@rckneu.com.ua</p>
-                </a>
- */
-
-
-
-
 
 .box_contacts__bottom{
     height: 54px;
@@ -583,7 +564,6 @@ background: rgba(225, 252, 222, 1);
     width: 59px;
     margin: 0 13.5px;
 }
-
 .instagram{
     height: 54px;
     width: 58px;
