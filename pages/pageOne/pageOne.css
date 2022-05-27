@@ -598,7 +598,7 @@ li.list_li>a {
         text-align: center;
     }
     .green_text.active{
-        opacity: .2;
+        opacity: 0;
     }
 
     .box_greent__text {
