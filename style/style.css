@@ -457,7 +457,7 @@ li.list_li>a {
     top: 5px;
 }
 
-.new_box__btn {
+.new_box__more {
     height: 70px;
     width: 350px;
     font-size: 36px;
@@ -474,6 +474,54 @@ li.list_li>a {
     position: absolute;
     bottom: 0px;
     left: 41%;
+}
+
+.new_box__more>.new_box__btn {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: rgba(1, 129, 77, 1);
+    color: rgba(255, 255, 255, 1);
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+}
+
+.new_box__more>.number_pages {
+    display: none;
+}
+
+.new_box__more.active>.new_box__btn {
+    display: none;
+}
+
+.new_box__more.active>.number_pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.new_box__more.active>.number_pages>a {
+    color: white;
+    text-decoration: none;
+    width: 30px;
+    height: 45px;
+    margin: 3px;
+    border-radius: 25px;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.new_box__more.active>.number_pages>a:hover {
+    background: rgba(7, 107, 67, 0.3);
+    border: 1px solid white;
 }
 
 /* box_contacts */
@@ -554,7 +602,6 @@ li.list_li>a {
 .top_right_phone {
     text-decoration: none;
     color: black;
-    /* border: 2px solid red; */
     width: 322px;
     margin-top: 12px;
     position: relative;
@@ -751,7 +798,6 @@ li.list_li>a {
         height: 406px;
         width: 406px;
         position: relative;
-
     }
 
     .section_img__original {
@@ -852,7 +898,6 @@ li.list_li>a {
         line-height: 108px;
         letter-spacing: -0.08em;
         text-align: center;
-
     }
 
     .new_box__content {
@@ -877,7 +922,7 @@ li.list_li>a {
 
     .box_content__section {
         height: 446px;
-        width: 862px;
+        width: 853px;
         margin: 15px auto;
     }
 
@@ -965,25 +1010,6 @@ li.list_li>a {
         top: 5px;
     }
 
-    .new_box__btn {
-        height: 70px;
-        width: 350px;
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 43px;
-        letter-spacing: 0em;
-        text-align: center;
-        background: rgba(1, 129, 77, 1);
-        color: rgba(255, 255, 255, 1);
-        cursor: pointer;
-        border-radius: 10px;
-        border: 1px solid green;
-        margin: 46px auto;
-        position: absolute;
-        bottom: 0px;
-        left: 41%;
-    }
-
     /* box_contacts */
     .box_contacts {
         top: -200px;
@@ -1018,10 +1044,8 @@ li.list_li>a {
     .box_header {
         height: 51px;
         width: 390px;
-
         padding: 0 18.05px;
         border-bottom: 1px solid black;
-        /* border: 2px solid red; */
     }
 
     .header_menu {
@@ -1076,8 +1100,6 @@ li.list_li>a {
         font-size: 16px;
         font-weight: 700;
         line-height: 19px;
-
-
     }
 
     li.list_li>img {
@@ -1097,7 +1119,6 @@ li.list_li>a {
         width: 18px;
         top: 5px;
         right: 22px;
-
     }
 
     .nav_bar__meaning {
@@ -1129,8 +1150,6 @@ li.list_li>a {
         top: 50px;
         position: absolute;
     }
-
-
 
     .box_video {
         top: 50px;
@@ -1190,7 +1209,6 @@ li.list_li>a {
         justify-content: space-around;
         align-items: center;
         background: rgba(3, 178, 107, 1);
-
     }
 
     .box_two__twoo>button {
@@ -1211,7 +1229,6 @@ li.list_li>a {
     .new_box {
         top: -770px;
         height: 800px;
-
     }
 
     .new_box.active {
@@ -1228,8 +1245,6 @@ li.list_li>a {
         line-height: 19px;
         text-align: center;
         margin-top: 10px;
-
-
     }
 
     .box_title__small {
@@ -1238,7 +1253,6 @@ li.list_li>a {
         line-height: 108px;
         letter-spacing: -0.08em;
         text-align: center;
-
     }
 
     .new_box__content {
@@ -1261,7 +1275,6 @@ li.list_li>a {
         border-radius: 10px;
         margin-bottom: 12px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
     }
 
     .box_content__section.disable {
@@ -1298,7 +1311,6 @@ li.list_li>a {
         height: 140px;
         width: 259px;
         left: 0px;
-
     }
 
     .section_box_title {
@@ -1313,7 +1325,7 @@ li.list_li>a {
     .section_box__text {
         height: 88px;
         width: 191px;
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 300;
         line-height: 10px;
     }
@@ -1345,8 +1357,7 @@ li.list_li>a {
         top: 5px;
     }
 
-    .new_box__btn {
-        border: 1px solid green;
+    .new_box__more {
         bottom: -38px;
         left: 37%;
         height: 30px;
@@ -1354,6 +1365,47 @@ li.list_li>a {
         font-size: 12px;
         font-weight: 400;
         line-height: 14px;
+        overflow: hidden;
+    }
+
+    .new_box__more>.new_box__btn {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 43px;
+        letter-spacing: 0em;
+        text-align: center;
+        background: rgba(1, 129, 77, 1);
+        color: rgba(255, 255, 255, 1);
+        margin: 0px auto;
+        position: relative;
+        top: -8px;
+    }
+
+    .new_box__more>.new_box__btn {
+        bottom: -10px;
+        left: 0%;
+        height: 30px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .new_box__more.active>.number_pages {
+        padding-top: 2px;
+    }
+
+    .new_box__more.active>.number_pages>a {
+        color: white;
+        text-decoration: none;
+        width: 15px;
+        height: 25px;
+        margin: 0px;
+        font-size: 14px;
+        padding-top: 2px;
+    }
+
+    .new_box__more.active>.number_pages>a:hover {
+        background: rgba(7, 107, 67, 0.3);
+        border: 1px solid white;
     }
 
     /* box_contacts */
@@ -1397,7 +1449,7 @@ li.list_li>a {
     .top_left__text {
         height: 13px;
         width: 113px;
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 300;
         line-height: 10px;
     }
@@ -1415,7 +1467,6 @@ li.list_li>a {
     .top_right_phone {
         text-decoration: none;
         color: black;
-        /* border: 2px solid red; */
         width: 100%;
         margin-top: 4px;
         position: relative;
@@ -1433,12 +1484,11 @@ li.list_li>a {
     }
 
     .top_right__textPhone {
-
         margin-top: 5px;
         margin-left: 0px;
         height: 12px;
         width: 107px;
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 300;
         line-height: 10px;
         top: -5px;
@@ -1448,7 +1498,7 @@ li.list_li>a {
 
     .top_right__textMessage {
         margin-left: 5.5px;
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 300;
         line-height: 10px;
         height: 11px;
@@ -1466,7 +1516,6 @@ li.list_li>a {
         height: 11px;
         width: 11px;
     }
-
 
     .box_contacts__bottom {
         height: 15px;
