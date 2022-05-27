@@ -2,9 +2,7 @@ let menu=document.querySelector(".header_menu");
 let navBar=document.querySelector(".nav_bar");
 let bodyAfter=document.querySelector("body");
 
-
 let a=0;
-
 function playMenu () {
     menu.src="images/header/menu.png";
     menu.classList.remove("active");
@@ -28,11 +26,9 @@ menu.onclick=()=> {
         bodyAfter.style.overflow="hidden";
         a++;
     }
-
     else if (a==1) {
         playMenu ();
     }
-
 }
 
 // menu.onclick = ()=>{
@@ -44,16 +40,6 @@ let listLiFour=document.querySelector(".list_li.four");
 let navBarMeaningOne=document.querySelector(".nav_bar__meaning.one");
 let navBarMeaningTwo=document.querySelector(".nav_bar__meaning.two");
 let navBarMeaningThree=document.querySelector(".nav_bar__meaning.three");
-
-// navBarMeaningOne.onmouseout = ()=>{
-//     playMenu ()
-// }
-// navBarMeaningTwo.onmouseout = ()=>{
-//     playMenu ()
-// }
-// navBarMeaningThree.onmouseout = ()=>{
-//     playMenu ()
-// }
 
 listLiOne.onclick=()=> {
     navBarMeaningOne.style.display="flex";
@@ -73,19 +59,16 @@ listLiFour.onclick=()=> {
     navBarMeaningThree.style.display="flex";
 }
 
-
-
 let newBox=document.querySelector(".new_box");
 let boxContentSectionDisable=document.querySelectorAll(".box_content__section.disable");
-
 let newBoxMore = document.querySelector(".new_box__more");
 
 newBoxMore.onclick=()=> {
     for(let i=0; i < boxContentSectionDisable.length; i++) {
-        boxContentSectionDisable[i].classList.toggle("active");
+        boxContentSectionDisable[i].classList.add("active");
     }
-    newBoxMore.classList.toggle("active");
-    newBox.classList.toggle("active");
+    newBoxMore.classList.add("active");
+    newBox.classList.add("active");
 }
 
 let headerTitle=document.querySelector(".header_title");
@@ -109,4 +92,3 @@ function titleName () {
         boxTitleSmall.innerHTML="РФК КНЕУ";
     }
 }
-
