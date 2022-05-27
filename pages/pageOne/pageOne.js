@@ -89,3 +89,38 @@ function plusSlides(a) {
         ourImgsOne.style.display = "flex";
     }
 }
+
+
+
+
+setInterval(playSlider, 10000);
+let number =0;
+function playSlider() {
+
+    setInterval(plusSlides(number), 10);
+    number++;
+    if(number == 4){
+        number=0;
+    }
+    else if (number == 2) {
+        ourImgsOne.style.display = "none";
+    } else if (number == 1) {
+        ourImgsOne.style.display = "flex";
+    }
+    
+}
+
+
+let imgGreen = document.querySelector(".img_green");
+let greenText = document.querySelector(".green_text");
+
+imgGreen.onmouseover = ()=>{
+    console.log("yes")
+    imgGreen.classList.add("active");
+    greenText.classList.add("active");
+    setTimeout(function() {
+        location.href = '../../index.html';
+      }, 400);
+}
+
+
