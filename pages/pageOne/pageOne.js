@@ -124,11 +124,10 @@ imgGreen.onmouseout = ()=>{
 }
 
 
-
 // Вешаем на прикосновение функцию handleTouchStart
-document.addEventListener('touchstart', handleTouchStart, false);  
+imgGreen.addEventListener('touchstart', handleTouchStart, false);  
 // А на движение пальцем по экрану - handleTouchMove      
-document.addEventListener('touchmove', handleTouchMove, false);
+imgGreen.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;                                                        
 var yDown = null;                                                        
@@ -153,16 +152,13 @@ function handleTouchMove(evt) {
         if ( xDiff > 0 ) {
             /* left swipe */ 
         } else {
-            /* right swipe */
+            imgGreen.classList.add("active");
+            greenText.classList.add("active");
+            setTimeout(function() {
+            location.href = '../../index.html';
+      }, 400);
         }                       
-    } else { // Это вам, в общем-то, не надо, вы ведь только влево-вправо собираетесь двигать
-        if ( yDiff > 0 ) {
-            /* up swipe */ 
-        } else { 
-            /* down swipe */
-        }                                                                 
-    }
-    /* reset values */
-    xDown = null;
-    yDown = null;                                             
+    } 
+                                            
 };
+
