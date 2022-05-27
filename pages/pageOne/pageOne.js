@@ -93,7 +93,7 @@ function plusSlides(a) {
 
 
 
-setInterval(playSlider, 10000);
+setInterval(playSlider, 5000);
 let number =0;
 function playSlider() {
 
@@ -114,7 +114,7 @@ function playSlider() {
 let imgGreen = document.querySelector(".img_green");
 let greenText = document.querySelector(".green_text");
 
-imgGreen.onmouseover = ()=>{
+imgGreen.onmouseout = ()=>{
     console.log("yes")
     imgGreen.classList.add("active");
     greenText.classList.add("active");
